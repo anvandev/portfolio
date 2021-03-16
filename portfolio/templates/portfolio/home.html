@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card text-center text-white bg-dark" style="border-radius: 10px; width: 36rem">
+    <div class="card-body">
+        <p class="card-text" style="font-size: 30px"><i class="fas fa-laptop"></i></p>
+        <p class="card-text" style="font-size: 22px">
+            Привет! Меня зовут Анастасия Ванян.<br>Я начинающий Back-End разработчик.
+        </p>
+        <p class="card-text">{{ about_me.text }}</p>
+        <p class="card-text" style="font-size: 30px">
+            <i class="fab fa-python"></i>&nbsp django &nbsp<i class="fab fa-git-alt"></i>&nbsp
+            <i class="fab fa-github"></i>&nbsp&nbsp<i class="fab fa-bootstrap"></i>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
