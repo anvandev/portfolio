@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from . models import Info
 
 
 def home(request):
-    about_me = Info.objects.get(id=1)
+    about_me = get_object_or_404(Info, id=1)
     return render(request, 'portfolio/home.html', {'about_me': about_me})
 
 

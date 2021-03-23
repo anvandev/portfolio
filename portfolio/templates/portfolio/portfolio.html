@@ -1,78 +1,69 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block content %}
-
-<div class="container">
+  <div class="container">
     <div class="row row-cols-1 row-cols-sm-3 g-4">
-        <div class="col-sm">
-            <div class="card h-100 text-white bg-dark" style="border-radius: 15px;">
-                <img src="{% static 'img/todo.png' %}" class="card-img-top image-responsive"
-                     style="object-fit: cover; height: 15vw; width: 100%; max-height: 180px; min-height: 150px;
-                 border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div class="card-body">
-                    <p class="card-text">
-                        Приложение ToDo: добавляйте задачи в свой список, удаляйте и редактируйте их,
-                        вычеркивайте выполненные задачи из списка.
-                    </p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://mo-todo-list.herokuapp.com/" class="btn btn-outline-light btn-sm"
-                       style="border-radius: 8px;"><i class="fas fa-eye"></i>&nbsp Live</a>&nbsp &nbsp &nbsp
-                    <a href="https://github.com/anvandev/ToDoApp" class="btn btn-outline-light btn-sm"
-                       style="border-radius: 8px;"><i class="fab fa-github"></i>&nbsp Code</a>
-                </div>
-            </div>
+      <div class="col-sm">
+        <div class="card h-100 text-white bg-dark" style="border-radius: 15px">
+          <img src="{% static 'img/todo.png' %}" class="card-img-top image-responsive">
+          <div class="card-body">
+            <p class="card-text">
+                Приложение ToDo: добавляйте задачи в свой список, удаляйте и редактируйте их,
+                вычеркивайте выполненные задачи из списка.
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://mo-todo-list.herokuapp.com/" class="btn btn-outline-light btn-sm"
+               style="border-radius: 8px;"><i class="fas fa-eye"></i>&nbsp Live</a>&nbsp &nbsp &nbsp
+            <a href="https://github.com/anvandev/ToDoApp" class="btn btn-outline-light btn-sm"
+               style="border-radius: 8px;"><i class="fab fa-github"></i>&nbsp Code</a>
+          </div>
         </div>
-        <div class="col-sm">
-            <div class="card h-100 text-white bg-dark" style="border-radius: 15px;">
-                <img src="{% static 'img/math.png' %}" class="card-img-top image-responsive"
-                     style="object-fit: cover; height: 15vw; width: 100%; max-height: 180px; min-height: 150px;
-                     border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div class="card-body">
-                    <p class="card-text">Калькулятор для вычисления выражений,
-                        например: (2 + 3 ** (2 - 2)) * 2.2 + (6 / (3 + 3)) ** 2
-                    </p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="#" class="btn btn-outline-light btn-sm" style="border-radius: 8px;">
-                        <i class="fas fa-eye"></i>&nbsp Live</a>&nbsp &nbsp &nbsp
-                    <a href="#" class="btn btn-outline-light btn-sm" style="border-radius: 8px;">
-                        <i class="fab fa-github"></i>&nbsp Code</a>
-                </div>
-            </div>
+      </div>
+      <div class="col-sm">
+        <div class="card h-100 text-white bg-dark" style="border-radius: 15px;">
+          <img src="{% static 'img/calculator.png' %}" class="card-img-top image-responsive">
+          <div class="card-body">
+            <p class="card-text">Калькулятор построен на алгоритме "пинг-понг" (альтернатива обратной польской
+                нотации), без функции eval() и пр. Пример выражения: ((-2.3) + 3 ** (2 - 2)) * 2.2 + (6/(3 + 3)* (-2)) ** 2.
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://calculator-mo.herokuapp.com/" class="btn btn-outline-light btn-sm" style="border-radius: 8px;">
+                <i class="fas fa-eye"></i>&nbsp Live</a>&nbsp &nbsp &nbsp
+            <a href="https://github.com/anvandev/Calculator" class="btn btn-outline-light btn-sm" style="border-radius: 8px;">
+                <i class="fab fa-github"></i>&nbsp Code</a>
+          </div>
         </div>
-        <div class="col-sm">
-            <div class="card h-100 text-white bg-dark" style="border-radius: 15px;">
-                <img src="{% static 'img/blog.png' %}" class="card-img-top image-responsive"
-                     style="object-fit: cover; height: 15vw; width: 100%;max-height: 180px;min-height: 150px;
-                     border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <div class="card-body">
-                    <p class="card-text">
-                        Учебный проект Django: блог с сортировкой постов, рейтингом,
-                        подсчетом количества просмотров, лайками и пр.
-                    </p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://github.com/anvandev/TMS_Django" class="btn btn-outline-light btn-sm"
-                       style="border-radius: 8px;"><i class="fab fa-github"></i>&nbsp Code</a>
-                </div>
-            </div>
+      </div>
+      <div class="col-sm">
+        <div class="card h-100 text-white bg-dark" style="border-radius: 15px;">
+          <img src="{% static 'img/blog.png' %}" class="card-img-top image-responsive">
+          <div class="card-body">
+            <p class="card-text">
+                Учебный проект Django: блог с сортировкой постов, рейтингом,
+                подсчетом количества просмотров, лайками и пр.
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://github.com/anvandev/TMS_Django" class="btn btn-outline-light btn-sm"
+               style="border-radius: 8px;"><i class="fab fa-github"></i>&nbsp Code</a>
+          </div>
         </div>
-        <div class="col-sm">
-            <div class="card h-100 text-white bg-dark" style="border-radius: 15px;">
-                <div class="card-body">
-                    <p class="card-text">&nbsp<br>&nbsp<br>Скоро здесь появится новый проект.<br>
-                        Вы може посмотреть другие мои репозитории в GitHub.
-                    </p>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="https://github.com/anvandev" class="btn btn-outline-light btn-sm"
-                       style="border-radius: 8px;"><i class="fab fa-github"></i>&nbsp Code</a>
-                </div>
-            </div>
+      </div>
+      <div class="col-sm">
+        <div class="card h-100 text-white bg-dark" style="border-radius: 15px;">
+          <div class="card-body">
+            <p class="card-text">&nbsp<br>&nbsp<br>Скоро здесь появится новый проект.<br>
+                Вы можете посмотреть другие мои репозитории в GitHub.
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://github.com/anvandev" class="btn btn-outline-light btn-sm"
+               style="border-radius: 8px;"><i class="fab fa-github"></i>&nbsp Code</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
+  </div>
 {% endblock %}
